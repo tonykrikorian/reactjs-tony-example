@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ContactFormComponent from './Components/ContactFormComponent/ContactFormComponent';
+import NavBarComponent from './Components/NavbarComponent/NavBarComponent';
+import Counter from './Components/CounterComponent/counter';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container-fluid">
+        <NavBarComponent></NavBarComponent>
+      </div>
+      <div className="container">
+        <div className="row justify-content-center">
+          <ContactFormComponent />
+        </div>
+        <div className="row">
+          <Counter/>
+        </div>
+      </div>
     </div>
   );
 }
