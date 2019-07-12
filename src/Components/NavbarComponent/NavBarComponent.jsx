@@ -17,6 +17,9 @@ class NavBarComponent extends Component {
                             <Link to="/contact" className="nav-link">Contacts</Link>
                         </li>
                         <li className="nav-item">
+                            <Link to="/colacion" className="nav-link">RetirarColacion</Link>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link disabled" href="#">About Us..</a>
                         </li>
                     </ul>
